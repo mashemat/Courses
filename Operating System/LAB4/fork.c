@@ -4,14 +4,16 @@
 
 int main(void)
 {
+// char * cmd[] = { "ls", "-l", (char *)0 };
+ char * cmd[] = { "ex", (char *)0 };
 	pid_t pid;
 		pid = fork();
 		if (pid == 0) {
-              // child process
+//                 execv("ex",cmd); 
+//                 execv("/bin/ls",cmd); 
 	    	  exit(0);
 		}
        else {
-                // parent process
                 sleep(12);
 }
        return 0;
