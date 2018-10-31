@@ -12,7 +12,7 @@ message() {
 collect()
 {
 
-    cd $HOME/Downloads
+    pushd $HOME/Downloads
 
     if [ $? = 0 ]; 
       then           
@@ -35,5 +35,5 @@ collect()
 echo "start collecting Download Folder"
 collect $1
 rm -rf * 
-cd ~
+popd
 echo "end"
