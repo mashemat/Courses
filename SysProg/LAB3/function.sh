@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Introducing the variables
+
 var_scope () {
 local gv1='local init'
 gv2='Changed inside'
