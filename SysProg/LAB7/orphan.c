@@ -1,0 +1,21 @@
+#include<stdio.h> 
+#include <sys/types.h> 
+#include <unistd.h> 
+
+
+int main() 
+{ 
+    int pid = fork(); 
+  
+    if (pid > 0) 
+        printf("parent process\n"); 
+  
+    else if (pid == 0) 
+    { 
+        sleep(60); 
+        printf("in child process\n"); 
+    } 
+  
+    return 0; 
+} 
+
